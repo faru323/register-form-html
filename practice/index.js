@@ -5,8 +5,10 @@
       return false;
     }
     */
-  
-  function addFields(){
+   const submitBtn = document.getElementById('submit_btn')
+  function addFields(e){
+    e.preventDefault()
+ 
     // Generate a dynamic number of inputs
     var number = document.getElementById("member").value;
     // Get the element where the inputs will be added to
